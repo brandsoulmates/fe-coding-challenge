@@ -1,13 +1,13 @@
 import * as React from "react"
 
-const IndexPage = () => {
+import HomePage from "./home"
+
+const App = () => {
   return (
-    <main>
-    <h1>Github User Viewer</h1>
-    </main>
+    <HomePage />
   )
 }
 
-export default IndexPage
+export default App
 
 export const Head = () => <title>Github User Viewer - Coding Challenge</title>
