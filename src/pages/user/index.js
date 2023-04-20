@@ -49,8 +49,8 @@ export const ProfileView = ({ username }) => {
   return (
     <Layout>
       {user ? (
-        <>
-          <div className="flex mt-6 py-8 pl-8 pr-16 gap-20 bg-white border-2 border-blue-500 rounded-2xl shadow-lg">
+        <div className="md:h-screen flex flex-col w-full md:w-3/5">
+          <div className="flex flex-col md:flex-row mt-10 py-8 pl-8 pr-8 md:pr-16 gap-5 md:gap-20 bg-white border-2 border-blue-500 rounded-2xl shadow-lg">
             <div className="text-center">
               <img src={user.avatar_url} alt={user.login} className="mx-auto w-48 h-48 rounded-full" />
               <h1 className="mt-4 text-xl font-medium">{user.name}</h1>
@@ -58,7 +58,7 @@ export const ProfileView = ({ username }) => {
               <p>{user.location}</p>
               <a href={user.html_url} className="text-blue-500 underline">{user.html_url}</a>
             </div>
-            <div className="flex-1 flex flex-col justify-between">
+            <div className="flex-1 flex flex-col">
               <div className="flex mt-12 w-full justify-between">
                 <div className="text-center">
                   <p className="text-4xl font-light">{user.public_gists}</p>
@@ -77,16 +77,16 @@ export const ProfileView = ({ username }) => {
                   <h2 className="mt-2 text-xl font-medium">Following</h2>
                 </div>
               </div>
-              <div className="content">
-                <p>
+              <div className="content pt-10">
+                <p className="pb-3">
                   <b>Biography: </b>
                   {user.bio}
                 </p>
-                <p>
+                <p className="pb-3">
                   <b>Company: </b>
                   {user.company}
                 </p>
-                <p>
+                <p className="pb-3">
                   <b>Twitter: </b>
                   <a href={`https://twitter.com/${user.twitter_username}`} className="text-blue-500 underline">
                     {user.twitter_username}
@@ -95,7 +95,7 @@ export const ProfileView = ({ username }) => {
               </div>
             </div>
           </div>
-          <div className="flex mt-4 justify-center items-center gap-8">
+          <div className="flex mt-10 justify-center items-center gap-8">
             <Link
               to={`/user/${prevUser?.login || ''}`}
               className={clsx('text-white', { 'opacity-70 pointer-events-none': !prevUser })}
@@ -110,8 +110,8 @@ export const ProfileView = ({ username }) => {
               {'Next >'}
             </Link>
           </div>
-        </>
-      ) : <p>loading...</p>}
+        </div>
+      ) : <p className="h-screen">loading...</p>}
     </Layout>
   )
 }

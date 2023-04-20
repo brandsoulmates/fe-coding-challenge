@@ -21,9 +21,9 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <div className="flex flex-wrap justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
         {users.map((user) => (
-          <div key={user.id} className="w-2/6">
+          <div key={user.id} className="w-72">
             <UserCard user={user} />
           </div>
         ))}
