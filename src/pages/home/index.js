@@ -21,7 +21,7 @@ const HomePage = () => {
 
   return (
     <Layout>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
+      <div className={`${users.length === 0 ? "h-screen" : ""} grid grid-cols-1 md:grid-cols-3 gap-20`}>
         {users.map((user) => (
           <div key={user.id} className="w-72">
             <UserCard user={user} />
