@@ -2,7 +2,7 @@
 
 This is a basic [Gatsby](https://www.gatsbyjs.com/) project. You have free reign to setup the project in any way you would like. Install as many packages or fonts as you wish. There are no limitations in that regard. The purpose of this exercise is to allow us to get some insight into your coding style, code quality, and organizational skills.
 
-Please note, before starting this assessment, message Nadina Gray or Michael Marina to say you are starting, and please message either Nadina Gray or Michael Marina on Upwork to say when you are finishing the assessment. 
+Please note, before starting this assessment, email Nadina Gray or Robert Specland to say you are starting, and to say when you are finishing the assessment. 
 ## Getting Started
 
 ```bash
@@ -57,4 +57,4 @@ To learn more about Gatsby, take a look at the following resources:
 - [Gatsby API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
 ## Bonus Points
-Use Tailwind CSS. Add tests. Deploy a version of this site.
+Use Tailwind CSS. Add tests. Deploy a version of this site to Azure.
